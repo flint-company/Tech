@@ -69,6 +69,9 @@ print(response.text)
 # > While i can't say his name anymore, his phone number is ****
 ```
 
+### Visual Aid
+![Pydantic Validation](./images/pydantic_validation.png)
+
 ## Detailed Guidance
 1. **Define the Pydantic Model**: Create a Pydantic model with field validators.
 2. **Implement Validation Logic**: Use `field_validator` to implement custom validation logic.
@@ -118,5 +121,12 @@ invalid_user = User(username="jd", email="john@example", age=17)
 - Ensure that the context dictionary keys match the expected keys in the validators.
 - Be cautious with regular expressions to avoid incorrect redactions.
 
+## Engagement
+Try modifying the advanced example to include additional validation rules. What happens if you add a new rule that conflicts with an existing one?
+
 ## Conclusion
 Enhanced validation with Pydantic in Instructor allows for more robust input handling and sensitive information management. This tutorial provides both a simple and an advanced example to get you started with Pydantic validation in Instructor.
+
+## References and Further Reading
+- [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
+- [Instructor Documentation](https://python.useinstructor.com/)

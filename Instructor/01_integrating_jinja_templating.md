@@ -52,6 +52,9 @@ client.create(
 )
 ```
 
+### Visual Aid
+![Jinja Template Rendering](./images/jinja_template_rendering.png)
+
 ## Detailed Guidance
 1. **Define the Prompt Template**: Use Jinja syntax to define the prompt template in the `content` field.
 2. **Pass the Context**: Provide a `context` dictionary to the `create` method, which will be used to render the template.
@@ -110,5 +113,12 @@ client.create(
 - Ensure that the context dictionary keys match the template variables.
 - Be cautious with conditional logic to avoid rendering errors.
 
+## Engagement
+Try modifying the advanced example to include additional context chunks and rules. What happens if you add a new rule that conflicts with an existing one?
+
 ## Conclusion
 Integrating Jinja templating in Instructor allows for more flexible and powerful prompt formatting. This tutorial provides both a simple and an advanced example to get you started with Jinja in Instructor.
+
+## References and Further Reading
+- [Jinja Documentation](https://jinja.palletsprojects.com/)
+- [Instructor Documentation](https://python.useinstructor.com/)

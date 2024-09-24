@@ -39,6 +39,9 @@ def normalize_address(address: Address):
     return address
 ```
 
+### Visual Aid
+![Versioning and Logging](./images/versioning_logging.png)
+
 ## Detailed Guidance
 1. **Define the Pydantic Models**: Create Pydantic models for the context and address.
 2. **Implement the Normalization Function**: Use the `create` method to normalize the address.
@@ -103,5 +106,12 @@ doc.save()
 - Ensure that sensitive information is handled securely using `SecretStr`.
 - Be cautious with logging to avoid exposing sensitive information.
 
+## Engagement
+Try modifying the advanced example to include additional fields in the `Document` model. What happens if you add a new field that requires validation?
+
 ## Conclusion
 Improved versioning and logging in Instructor allows for more secure and maintainable prompt management. This tutorial provides both a simple and an advanced example to get you started with versioning and logging in Instructor.
+
+## References and Further Reading
+- [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
+- [Instructor Documentation](https://python.useinstructor.com/)
